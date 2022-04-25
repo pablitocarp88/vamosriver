@@ -1,0 +1,291 @@
+
+
+body{
+    background-color: rgba(255, 255, 255, 0.979);
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to bottom, #f8d9f6, #f7d2f4, #f7ccf3, #f6c5f1, #f6beef);
+}
+
+header a img{
+    width: 20%;
+    height: 100%;
+    object-fit: contain;
+    padding-left: 45%;
+
+    
+}
+
+body header h1{
+    font-size: 50px;
+    text-transform: initial;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    text-decoration-line: overline underline;
+    text-decoration-color:rgb(0, 0, 0)
+}
+
+
+div .fondoImagen{
+    background-color: rgb(49, 66, 82);
+    width: 20px;
+}
+.imagen{
+    height: 15%;
+    width: 15%;
+
+}
+main{height: 100vh;
+    width: 100%;
+    background-image: url(./jeans.img/principal.jpeg);
+    background-size: cover;
+}
+
+ul{
+    display: inline;
+list-style: none;
+background-color: lightpink;
+border: 2px solid;
+font-size: 20px;
+margin: 15px;
+padding: 15px;
+width: 100%;
+
+}
+
+li{
+    display: inline;
+    width: 100%;
+    position: relative;
+    font-size: 40px;
+    color: black;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    
+}
+li a:hover{
+    color: aliceblue;
+}
+ul ul{
+    position: absolute;
+    display: none;
+}
+ul ul li{
+    display: block;
+}
+
+    
+
+
+footer{height: 150px;
+    width: 100%;
+    color: black;
+    font-size: 50px;
+    text-align: center;    
+
+}
+.menu{width: 400px;
+    display: flex;
+    display: inline;
+    padding-left: 10%;
+    list-style: none;
+    justify-content: last baseline;
+    
+    
+}
+#logo1{width: 100vh;
+    height: 100%;
+    object-fit: contain;
+    
+    text-align: center;
+
+
+}
+footer .guia{
+    width: 20px;
+}
+
+nav h2 div{
+float: inline-start;
+}
+
+
+/* inicio de Galeria */
+.galeria{
+    min-height: 800px;
+    width: 100%;
+    background-color: rgb(241, 220, 235);
+    display: grid;
+    padding: 20px;
+    gap: 5px;
+}
+
+.img{
+    background-color: coral;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #333;
+    transition: all 0.7s;
+}
+.img:hover{
+    transform: scale(1.05);
+    transition: all 0.7s;
+}
+
+.img1{
+    
+    
+    background-color: red;
+    background-image: url(./jeans.img/imagen1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.img2{
+    
+    
+    background-color: green;
+    background-image: url(./jeans.img/img2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.img3{
+    
+    
+    background-color: mediumblue;
+    background-image: url(./jeans.img/img3.png);
+    background-position: center;
+    background-size: cover;    
+}
+
+.img4{
+    
+    
+    background-color: blueviolet;
+    background-image: url(./jeans.img/img4.png);
+    background-position: center;
+    background-size: cover;
+}   
+
+.img5{
+    
+    
+    background-color: brown;
+    background-image: url(./jeans.img/img5.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img6{
+    
+    background-color: aqua;
+    background-image: url(./jeans.img/img6.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img7{
+    
+    
+    background-color: cornsilk;
+    background-image: url(./jeans.img/img7.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img8{
+    
+    
+    background-color: orangered;
+    background-image: url(./jeans.img/img8.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px){
+    .img{
+        height: 175px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .img8{
+        grid-column: 2/4;
+    }
+}
+
+@media screen(min-width:768px) and (max-width: 1023px) {
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+
+@media only screen and (min-width:1024px){
+.galeria{
+    grid-template-columns: repeat(4, 1fr);
+}
+.img{
+    height: auto;
+}
+    .img1{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        
+    }
+    
+    .img2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        
+    }
+    
+    .img3{
+        grid-column: 3/5;
+        grid-row: 1/2;
+    
+    }
+    
+    .img4{
+        grid-column: 2/3;
+        grid-row: 2/4;
+    
+    }   
+    
+    .img5{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        
+    }
+    
+    .img6{
+        grid-column: 4/5;
+        grid-row: 2/3;
+        
+    }
+    
+    .img7{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        
+    }
+    
+    .img8{
+        grid-column: 3/5;
+        grid-row: 3/4;
+        
+    }
+
+
+}
+    
+
+/* fin de galeria */
